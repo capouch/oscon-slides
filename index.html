@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+	<html class="sl-root base export loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>OSCON 2015: Slides</title>
+		<meta name="description" content="Slides">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-grey-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="2944a9522dadc5f59f6b23b93b40e652"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 250px; height: auto;" data-block-id="cb1a2bbe4d4495ae6e1bd6db6b5de943"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>Programming Single Page Applications</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="f967375702f88ed6d6327fb738f6255d" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 131px; top: 444px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 70%;">
+<p>Craig Austgen, Brian Capouch, Nathan Samano</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="9ac00cdcb9521f0e2b9ecdaf622f0920" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 131px; top: 474px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Saint Joseph's College</p>
+</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 900px; left: 30px; top: 58px; height: auto;" data-block-id="ac11977a8c432f5ea1e25270e2b6f5a7"><div class="sl-block-content" data-placeholder-tag="h1" style="text-align: left;" data-placeholder-text="Text">
+<h1>Basic parts<br>
+Coding<br>
+Future</h1>
+</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="f69209d8bc369a9bd4d572e9d32e2ab3"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Paradigm Shift?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="2dffffffab91b45f3fe4ff2229159b08"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<ul>
+	<li>Browser as app container</li>
+	<li>Long-lived pages</li>
+	<li>Client-side routing</li>
+</ul>
+</div></div></section><section><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 229px; height: auto;" data-block-id="83796e396baaa6cf9744f818ee0da4b0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<ul>
+	<li>JavaScript end-to-end</li>
+	<li>Responsive</li>
+	<li>Two-way data binding</li>
+</ul>
+</div></div></section><section><div class="sl-block" data-block-type="image" style="width: 700px; height: 548.883374689826px; left: 130px; top: 28px;" data-block-id="690e66fdd64459ed7ac13e5d3e4d6447"><div class="sl-block-content"><img style="" data-natural-width="806" data-natural-height="632" data-src="deck-1/1574132-electronSPA.png"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 575px; height: auto;" data-block-id="37c4f6935fd2ee242849c0c6b6565db8"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Full App w/Electron</h2>
+</div></div></section><section data-id="7090e2b3b2fa829e09cc88d2c17bd11f"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="fdec003a35d46b9d157cc08e6bbe86b2"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>What is an SPA?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="e156ab4c917d2e21f11af4cec7995bca"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Single Page Load</li>
+	<li>Long-lived</li>
+	<li>Like an application</li>
+	<li>Last bullet</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="2e10bbbdfead645afe524d827dc1bdcc" style="min-width: 30px; min-height: 30px; width: 613px; height: 300px; left: 117px; top: 200px;"><div class="sl-block-content" style="z-index: 13;"><pre><code>&lt;!-- Let's get started --&gt;                                             
+&lt;script&gt;                                                               
+    // Calling the toplevel initModule starts up the SPA               
+    $(function () { spa.initModule( $('#spa') ); });
+&lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+&lt;main id="spa"&gt;&lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div></section><section data-id="f64ae4e83fc00cfb58bb775974f55464"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 87px; height: auto;" data-block-id="41b284a1df39093c8064866e08000202"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; font-size: 90%;">
+<h2>Keep it generic</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 25px; top: 202px; height: auto;" data-block-id="cc9dfe8529d455cd31d91ec5239a7ea7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<p>Our example app uses clearly marked regions as containers for specific functions</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 454px; height: 225.065840433772px; left: 479px; top: 237px;" data-block-id="1b28268cb1b35f544832ad2489fd24c9"><div class="sl-block-content"><img data-natural-width="1291" data-natural-height="640" style="" data-src="deck-1/1573951-genView.png"></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":456058,"slug":"deck-1","title":"OSCON 2015","description":"All about the SPA","visibility":"all","published_at":"2015-07-15T09:04:45.659Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/secure/0ce6e3/decks.jpg","view_count":2,"user":{"id":353104,"username":"capouch","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/32ddc50f6a97501272537b78390517ea?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","pro":true,"enterprise":false,"enterprise_manager":false,"settings":{"id":186613,"present_controls":true,"present_upsizing":true},"registered":true},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"rtl":false,"version":2,"notes":{}}};
+			SLConfig.current_user = {
+				name: "",
+				username: "capouch",
+				pro: true
+			};
+		</script>
+
+		<script src="lib/head.min.js"></script>
+		<script src="lib/reveal.min.js"></script>
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				mouseWheel: false,
+
+				autoSlide: SLConfig.deck.auto_slide_interval || 0,
+				autoSlideStoppable: true,
+
+				rolling_links: SLConfig.deck.rolling_links || true,
+				center: SLConfig.deck.center || false,
+				loop: SLConfig.deck.should_loop || false,
+				rtl: SLConfig.deck.rtl || false,
+
+				transition: SLConfig.deck.transition,
+				backgroundTransition: SLConfig.deck.background_transition,
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js', async: true, callback: function() { hljs.initHighlighting(); hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+			// Make Slides speaker notes available in the reveal.js speaker view
+			if( SLConfig.deck.notes ) {
+				[].forEach.call( document.querySelectorAll( '.reveal .slides section' ), function( slide ) {
+
+					var value = SLConfig.deck.notes[ slide.getAttribute( 'data-id' ) ];
+					if( value && typeof value === 'string' ) {
+						slide.setAttribute( 'data-notes', value );
+					}
+
+				} );
+			}
+		</script>
+
+		
+
+	</body>
+</html>
